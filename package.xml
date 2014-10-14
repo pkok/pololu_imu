@@ -1,0 +1,40 @@
+<?xml version="1.0"?>
+<package>
+  <name>pololu_imu</name>
+  <version>0.0.1</version>
+  <description>ROS wrapper for select Pololu gyroscopes, accelerometers and magnetometers.
+
+    Note that firmware/CMakeLists.txt needs editing for your personal usage.
+
+    The package should function with all parts of the LSM303 and L3G series.
+  </description>
+
+  <maintainer email="dhrdekok@gmail.com">Patrick de Kok</maintainer>
+  <license>TODO</license>
+
+  <!-- <url type="website">http://wiki.ros.org/pololu_imu</url> -->
+  <url type="repository">https://github.com/pkok/pololu_imu</url>
+  <url type="bugtracker">https://github.com/pkok/pololu_imu/issues</url>
+
+  <author email="dhrdekok@gmail.com">Patrick de Kok</author>
+
+  <buildtool_depend>catkin</buildtool_depend>
+  <!-- Needed by interpet_data -->
+  <build_depend>geometry_msgs</build_depend>
+  <build_depend>roscpp</build_depend>
+  <build_depend>sensor_msgs</build_depend>
+  <run_depend>geometry_msgs</run_depend>
+  <run_depend>roscpp</run_depend>
+  <run_depend>sensor_msgs</run_depend>
+  <!-- Needed by firmware_imu -->
+  <build_depend>geometry_msgs</build_depend>
+  <build_depend>rosserial_arduino</build_depend>
+  <build_depend>rosserial_client</build_depend>
+  <run_depend>geometry_msgs</run_depend>
+  <run_depend>rosserial_arduino</run_depend>
+  <run_depend>rosserial_client</run_depend>
+
+  <export>
+    <!-- <metapackage/> -->
+  </export>
+</package>

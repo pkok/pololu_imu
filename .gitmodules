@@ -1,0 +1,6 @@
+[submodule "firmware/lsm303-arduino"]
+	path = firmware/lsm303-arduino
+	url = https://github.com/pololu/lsm303-arduino.git
+[submodule "firmware/l3g-arduino"]
+	path = firmware/l3g-arduino
+	url = https://github.com/pololu/l3g-arduino.git
