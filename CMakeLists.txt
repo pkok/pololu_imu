@@ -114,6 +114,9 @@ catkin_package(
 # include_directories(include)
 include_directories(
   ${catkin_INCLUDE_DIRS}
+  ${rosserial_INCLUDE_DIRS}
+  firmware/lsm303-arduino/LSM303/
+  firmware/l3g-arduino/L3G/
   include/
 )
 
